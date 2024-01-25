@@ -1,0 +1,195 @@
+/*GOOGLE FONTS(YOUNG SERIF - OUTFIT)*/
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+/*RESETTING BASIC STYLE*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*GLOBAL VARIABLES*/
+:root {
+  /*Primary Colors*/
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  /*Neutral Colors*/
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+  /*Font Family*/
+  --f-youngserif: "Young Serif", serif;
+  --f-outfit: "Outfit", sans-serif;
+  /*Font Weight*/
+  --fw-normal: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  /*Font Size*/
+  --fs-paragraph: 16px;
+}
+
+/*BASE STYLE*/
+body {
+  background-color: var(--eggshell);
+  font-family: var(--f-outfit);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+h1 {
+  font-family: var(--f-youngserif);
+  font-weight: var(--fw-normal);
+  color: var(--dark-charcoal);
+  line-height: 1;
+  margin-bottom: 20px;
+}
+h2 {
+  margin: 20px 0;
+  color: var(--nutmeg);
+  font-family: var(--f-youngserif);
+  font-weight: var(--fw-normal);
+}
+h3 {
+  color: var(--dark-raspberry);
+  margin-bottom: 15px;
+}
+p {
+  color: var(--wenge-brown);
+  line-height: 1.5;
+}
+li {
+  list-style: square;
+  color: var(--nutmeg);
+}
+
+/*MOBILE VERSION*/
+.container {
+  width: 375px;
+  background-color: white;
+}
+/*HEADER*/
+.img-container {
+  width: 100%;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+/*CONTENT*/
+.recipe-container {
+  padding: 30px;
+}
+
+/*TIME*/
+.prep-container {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: var(--rose-white);
+  border-radius: 15px;
+}
+.prep-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 30px;
+  color: var(--nutmeg);
+}
+.prep-list li {
+  margin: 5px 0;
+}
+.prep-list p {
+  margin: 0 10px;
+}
+/*INGREDIENTS*/
+
+.ingredients-list {
+  padding: 0 30px;
+}
+.ingredients-list li {
+  color: var(--nutmeg);
+  padding: 10px 20px;
+  list-style: square;
+}
+
+/*INSTRUCTIONS*/
+.instructions-list li {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+}
+.instructions-list span {
+  font-weight: bold;
+  padding: 0 20px 0 10px;
+  color: var(--nutmeg);
+}
+.instructions-list p {
+  text-align: justify;
+  margin: 5px 0;
+}
+
+/*NUTRITION*/
+.nutritions-container p{
+    margin-bottom: 20px;
+}
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition-item,
+.nutrition-number {
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.nutrition-item {
+  color: var(--wenge-brown);
+}
+.nutrition-number {
+  color: var(--nutmeg);
+  font-weight: var(--fw-semibold);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+.line {
+  width: 100%;
+  border: 0.02rem solid var(--light-grey);
+  margin: 20px 0;
+}
+/*DESKTOP VERSION*/
+@media screen and (min-width: 768px) {
+  /*CONTAINER*/
+  .container{
+    width: 700px;
+    min-height: 100vh;
+    margin: 40px auto;
+    border-radius: 15px;
+  }
+  /*HEADER*/
+  .img-container{
+    width: 100%;
+    padding: 30px 30px 0 30px;
+  }
+  img{
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
