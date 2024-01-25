@@ -22,8 +22,8 @@ Mentor challenges help you improve your coding skills by building realistic proj
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/recipe-page-mobile-first-Ef1GKW8iR_)
+- Live Site URL: [Github](https://dgarance.github.io/recipe-page/)
 
 ## My process
 
